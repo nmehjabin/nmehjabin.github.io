@@ -1,1 +1,17 @@
+/* ── Reset & base ── */
+*, *::before, *::after {
+  box-sizing: border-box;  /* makes width include padding, not just content */
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fafafa;
+  max-width: 800px;      /* keeps lines from stretching too wide on big screens */
+  margin: 0 auto;        /* centers the body horizontally */
+  padding: 2rem;
+}
