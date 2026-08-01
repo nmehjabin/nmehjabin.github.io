@@ -33,7 +33,7 @@ header p {
 }
 
 /* ── Nav ── */
-nav {
+/* nav {
   margin-top: 1rem;
 }
 
@@ -48,7 +48,7 @@ nav a {
 
 nav a:hover {
   color: #0066cc;
-}
+} */
 
 /* ── Mobile nav ── */
 #nav-toggle {
