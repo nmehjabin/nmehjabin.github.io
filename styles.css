@@ -49,3 +49,46 @@ nav a {
 nav a:hover {
   color: #0066cc;
 }
+
+/* ── Mobile nav ── */
+#nav-toggle {
+  display: none; /* hidden on desktop — only shows on mobile */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+#nav-links a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: #222;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+#nav-links a:hover {
+  color: #0066cc;
+}
+
+@media (max-width: 600px) {
+  #nav-toggle {
+    display: block; /* show hamburger on mobile */
+  }
+
+  #nav-links {
+    display: none; /* hide links by default on mobile */
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+
+  #nav-links.open {
+    display: flex; /* show links when .open class is present */
+  }
+
+  #nav-links a {
+    margin: 0.4rem 0;
+  }
+}
