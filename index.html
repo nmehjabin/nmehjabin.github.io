@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nadia Mehjabin</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
 <header>
-  <h1>Nadia Mehjabin</h1>
-  <p>PhD Student in Computer Science · University of Virginia</p>
   <nav>
     <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
     <div id="nav-links">
@@ -17,106 +18,170 @@
       <a href="#research">Research</a>
       <a href="#projects">Projects</a>
       <a href="#blog">Blog</a>
-  </div>
+    </div>
   </nav>
 </header>
 
 <section id="about">
-  <h2>About</h2>
-  <p>
-    I am a PhD student in Computer Science at the University of Virginia (expected May 2030), 
-    working in the intersection of <strong>AI, mobile sensing, and mental health</strong>. 
-    My research asks how digital signals from everyday devices — phones, wearables, and 
-    social media — can help us understand human behavior and mental health as it actually 
-    unfolds in the real world.
-  </p>
-  <p>
-    I am interested in building context-aware AI systems that can detect early signs of 
-    distress and deliver support that fits a person's real situation — from clinical 
-    interventions for serious mental illness to lightweight tools for student wellbeing. 
-    I am also drawn to the methodological questions underneath: what behavioral signals 
-    actually generalize across people and settings, and where current models fall short.
-  </p>
-  <p>
-    Before UVA, I completed my B.A. in Computer Science at Bard College (May 2025), 
-    where I was a Distinguished Scientist Scholar. My prior work spans agent-based 
-    modeling, NLP evaluation pipelines, acoustic feature analysis for health prediction, 
-    and software automation — all of which feed into my interest in building systems 
-    that reason about people and their contexts.
-  </p>
+  <div class="profile">
+    <img src="photo.jpg" alt="Nadia Mehjabin" class="profile-photo">
+    <div class="profile-text">
+      <h1>Nadia Mehjabin</h1>
+      <p class="tagline">PhD Student in Computer Science · University of Virginia</p>
+      <p>
+        I am a PhD student in Computer Science at the University of Virginia (expected May 2030),
+        working at the intersection of <strong>AI, mobile sensing, and mental health</strong>.
+        My research asks how digital signals from everyday devices — phones, wearables, and
+        social media — can help us understand human behavior and mental health as it actually
+        unfolds in the real world.
+      </p>
+      <p>
+        I am interested in building context-aware AI systems that detect early signs of
+        distress and deliver support that fits a person's real situation. I am also drawn
+        to the methodological questions: what behavioral signals generalize across people
+        and settings, and where current models fall short.
+      </p>
+      <p>
+        Before UVA, I completed my B.A. in Computer Science at Bard College (May 2025),
+        where I was a Distinguished Scientist Scholar. My prior work spans agent-based
+        modeling, NLP evaluation pipelines, acoustic feature analysis for health prediction,
+        and software automation.
+      </p>
+
+      <div class="profile-meta">
+        <div class="meta-block">
+          <h3>Interests</h3>
+          <ul>
+            <li>AI & Mental Health</li>
+            <li>Mobile & Passive Sensing</li>
+            <li>Context-Aware Systems</li>
+            <li>Computational Behavioral Science</li>
+          </ul>
+        </div>
+        <div class="meta-block">
+          <h3>Education</h3>
+          <ul>
+            <li>
+              <strong>PhD in Computer Science</strong><br>
+              University of Virginia, 2030
+            </li>
+            <li>
+              <strong>B.A. in Computer Science</strong><br>
+              Bard College, 2025
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="mailto:nmbristy@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/nadia-mehjabin">LinkedIn</a>
+        <a href="https://github.com/nmehjabin">GitHub</a>
+        <a href="https://scholar.google.com">Google Scholar</a>
+      </div>
+
+    </div>
+  </div>
 </section>
-  <section id="research">
+
+<section id="research">
   <h2>Research</h2>
 
   <div class="research-item">
     <h3>Modeling the Extra-Cellular Matrix in Cancer Angiogenesis</h3>
     <p class="meta">Senior Thesis · Bard College · May 2025</p>
-    <p>Developed an ABM of triple-negative breast cancer integrating a dynamic ECM module 
-    and gradient-responsive migration algorithm. Demonstrated that radial ECM gradients 
-    increase cellular displacement by ~114% compared to uniform gradients, and validated 
-    the synergistic role of VEGF and ECM interactions in driving angiogenesis.</p>
+    <p>
+      Developed an agent-based model of triple-negative breast cancer integrating a dynamic
+      ECM module and gradient-responsive migration algorithm. Demonstrated that radial ECM
+      gradients increase cellular displacement by ~114% compared to uniform gradients, and
+      validated the synergistic role of VEGF and ECM interactions in driving angiogenesis.
+    </p>
   </div>
 
   <div class="research-item">
     <h3>Acoustic Features for Neurobehavioral Health Prediction</h3>
     <p class="meta">Data Science Intern · Vocadian Inc. · Summer 2023</p>
-    <p>Identified acoustic features in human speech using OpenSmile to predict 
-    neurobehavioral performance degradation in Spanish-speaking mining workers. 
-    Conducted research on voice as a non-invasive digital biomarker for sleepiness, 
-    stress, and Parkinson's disease monitoring.</p>
+    <p>
+      Identified acoustic features in human speech using OpenSmile to predict neurobehavioral
+      performance degradation in Spanish-speaking mining workers. Conducted research on voice
+      as a non-invasive digital biomarker for sleepiness, stress, and Parkinson's disease
+      monitoring in ambulatory settings.
+    </p>
+  </div>
+
+  <div class="research-item">
+    <h3>Nanocrystal Benchmarking Pipeline</h3>
+    <p class="meta">Research Fellow · Bard Summer Research Institute · Summer 2023</p>
+    <p>
+      Built an automated end-to-end data pipeline in Python to generate benchmarking reports
+      for nanocrystal samples using the Materials Project database. Created a Tkinter GUI to
+      visualize and rank nanocrystal structures by Pearson correlation coefficients.
+    </p>
   </div>
 
   <div class="research-item">
     <h3>Neural Text Simplification & Human Evaluation</h3>
     <p class="meta">Research Fellow · Bard Summer Research Institute · Summer 2022</p>
-    <p>Designed an end-to-end evaluation pipeline using the Amazon Mechanical Turk API 
-    to distinguish model-generated text from human references in sentence fusion and 
-    text simplification tasks. Leveraged Pandas, Scikit-learn, and Matplotlib to 
-    analyze agreement metrics and optimize model performance.</p>
+    <p>
+      Designed an end-to-end evaluation pipeline using the Amazon Mechanical Turk API to
+      distinguish model-generated text from human references in sentence fusion and text
+      simplification tasks. Leveraged Pandas, Scikit-learn, and Matplotlib to analyze
+      agreement metrics and optimize model performance.
+    </p>
   </div>
+
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
 
   <div class="project-item">
-    <h3>Phase App <span class="tag"> Best DEI Hackathon — Fidelity</span></h3>
+    <h3>Phase App <span class="tag">🏆 Best DEI Hackathon — Fidelity</span></h3>
     <p class="meta">November 2024</p>
-    <p>Led a team of four to build a web app delivering personalized nutrition and 
-    fitness recommendations tailored to menstrual cycle phases, supporting women's 
-    health and wellness.</p>
+    <p>
+      Led a team of four to build a web app delivering personalized nutrition and fitness
+      recommendations tailored to menstrual cycle phases, supporting women's health and wellness.
+    </p>
+  </div>
+
+  <div class="project-item">
+    <h3>Operations Metric System & Reporting Bot</h3>
+    <p class="meta">Software Engineering Intern · HCSC · Summer 2024</p>
+    <p>
+      Reduced 70 hours/month of manual work by developing an operations metric system using
+      VBA and Python. Built and deployed a Monthly Reporting Bot with UiPath to automate
+      data extraction and email delivery, minimizing human error and saving up to $1K per
+      user annually in bot license costs.
+    </p>
   </div>
 
   <div class="project-item">
     <h3>COVID-19 Mask Effectiveness Simulation</h3>
     <p class="meta">Personal Project · April 2022</p>
-    <p>Built an ABM in Python simulating COVID-19 transmission across indoor 
-    environments. Showed that N95 masks reduce infection rates significantly more 
-    than surgical masks, while modeling environmental dynamics and user behavior.</p>
+    <p>
+      Built an agent-based model in Python simulating COVID-19 transmission across indoor
+      environments. Demonstrated that N95 masks reduce infection rates significantly more
+      than surgical masks, while modeling the effects of environmental dynamics and user
+      behavior on viral spread.
+    </p>
   </div>
 
-  <div class="project-item">
-    <h3>Nanocrystal Benchmarking Pipeline</h3>
-    <p class="meta">Research Fellow · Bard Summer Research Institute · Summer 2023</p>
-    <p>Built an automated data pipeline in Python to generate benchmarking reports 
-    for nanocrystal samples using the Materials Project database. Created a Tkinter 
-    GUI to visualize and rank structures by Pearson correlation coefficients.</p>
-  </div>
 </section>
 
 <section id="blog">
   <h2>Blog</h2>
-  <p>Coming soon — I'll be writing about research, PhD life, and things I'm learning.</p>
+  <p>Coming soon — I'll be writing about research, PhD life, and things I'm learning along the way.</p>
 </section>
 
 <footer>
-  <p>&copy; 2026 Nadia Mehjabin</p>
-  <p>
-    <a href="mailto:nmbristy@gmail.com">Email</a> ·
-    <a href="https://linkedin.com/in/nadia-mehjabin">LinkedIn</a> ·
+  <p>&copy; 2026 Nadia Mehjabin &nbsp;·&nbsp;
+    <a href="mailto:nmbristy@gmail.com">Email</a> &nbsp;·&nbsp;
+    <a href="https://linkedin.com/in/nadia-mehjabin">LinkedIn</a> &nbsp;·&nbsp;
     <a href="https://github.com/nmehjabin">GitHub</a>
   </p>
 </footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
